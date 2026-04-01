@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 220 17% 27%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 17% 27%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 17% 27%;
+
+    --primary: 145 100% 27%;
+    --primary-foreground: 0 0% 100%;
+
+    --primary-dark: 145 100% 18%;
+    --primary-light: 145 60% 95%;
+
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 220 17% 27%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+
+    --accent: 145 60% 95%;
+    --accent-foreground: 145 100% 18%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 145 100% 27%;
+
+    --radius: 0.75rem;
+
+    --hero-gradient: linear-gradient(90deg, hsl(145, 100%, 27%) 18%, hsla(145, 100%, 27%, 0) 100%);
+    --section-gradient: linear-gradient(180deg, hsl(0, 0%, 100%) 0%, hsl(145, 60%, 97%) 100%);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 145 100% 27%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  .page-banner {
+    @apply relative h-[240px] md:h-[320px] flex items-center justify-center overflow-hidden;
+    background: linear-gradient(90deg, hsl(145, 100%, 18%) 0%, hsl(145, 100%, 27%) 100%);
+  }
+
+  .page-banner-title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary-foreground text-center relative z-10;
+  }
+
+  .card-clinic {
+    @apply bg-card rounded-xl border border-border overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+}
