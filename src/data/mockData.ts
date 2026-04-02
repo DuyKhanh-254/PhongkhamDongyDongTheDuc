@@ -21,6 +21,7 @@ import intro4 from "@/assets/intro-4.jpg";
 import cs1 from "@/assets/cs1.jpg";
 import cs2 from "@/assets/cs2.jpg";
 import cs3 from "@/assets/cs3.jpg";
+import comImg from "@/assets/com.jpg";
 
 const makeData = (lang: string) => {
   const isKo = lang === 'ko';
@@ -233,4 +234,5 @@ export const facilityImages = [
   { id: 1, src: cs1, alt: "Cơ sở vật chất 1" },
   { id: 2, src: cs2, alt: "Cơ sở vật chất 2" },
   { id: 3, src: cs3, alt: "Cơ sở vật chất 3" },
+  { id: 4, src: comImg, alt: "Cơ sở vật chất 4" },
 ];

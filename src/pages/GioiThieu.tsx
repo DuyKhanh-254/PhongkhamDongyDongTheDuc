@@ -107,12 +107,18 @@ const GioiThieu = () => {
               {String(t('sections.facility'))}
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {facilityImages.map((img) => (
-              <div key={img.id} className="rounded-3xl overflow-hidden aspect-[4/3] border border-border/30 shadow-md">
-                <img src={img.src} alt={img.alt} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
-              </div>
-            ))}
+          <div className="relative overflow-hidden w-full whitespace-nowrap group">
+            {/* Seamless gradient masks for visual flair */}
+            <div className="absolute top-0 left-0 w-8 md:w-20 h-full bg-gradient-to-r from-zinc-50/60 to-transparent z-10 pointer-events-none" />
+            <div className="absolute top-0 right-0 w-8 md:w-20 h-full bg-gradient-to-l from-zinc-50/60 to-transparent z-10 pointer-events-none" />
+            
+            <div className="flex w-max animate-marquee gap-6 hover:[animation-play-state:paused]">
+              {[...facilityImages, ...facilityImages].map((img, idx) => (
+                <div key={`${img.id}-${idx}`} className="w-[300px] md:w-[400px] flex-shrink-0 rounded-3xl overflow-hidden aspect-[4/3] border border-border/30 shadow-md">
+                  <img src={img.src} alt={img.alt} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
