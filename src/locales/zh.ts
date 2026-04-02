@@ -1,0 +1,106 @@
+export const zh = {
+  nav: {
+    home: "首页",
+    about: "关于我们",
+    services: "诊疗服务",
+    news: "新闻与知识",
+    library: "图库",
+    contact: "联系我们",
+  },
+  header: {
+    lang_vi: "Tiếng Việt",
+    lang_ko: "한국어",
+    lang_zh: "中文",
+  },
+  hero: {
+    title: "山-世-德 中医诊所",
+    desc: "颈肩酸痛？失眠？坐骨神经痛？\n中医高效治疗",
+    bullets: ["不依赖西药", "个性化治疗方案"],
+    bookBtn: "预约咨询",
+    hotlineBtn: "热线电话",
+  },
+  sections: {
+    commonDiseases: "常见治疗疾病",
+    methods: "诊所治疗方法",
+    doctors: "医疗团队",
+    testimonials: "患者反馈",
+    news: "新闻与知识",
+    viewAllNews: "查看所有文章",
+    bookNow: "今天立即预约",
+    bookNowDesc: "经验丰富的医生团队随时为您提供咨询和治疗。",
+    callNow: "立即拨打：",
+    sendReq: "发送咨询请求",
+    aboutShort1: "山-世-德中医诊所是一家传统医学专科诊所，专注于通过结合现代方法的中医疗法治疗骨关节、神经及消化系统疾病。",
+    aboutShort2: "诊所采用针灸、推拿、电针、开中药及非药物疗法，从根本上解决病因，促进气血流通，自然恢复身体功能。",
+    aboutShort3: "山-世-德旨在通过不依赖西药的安全中医疗法，帮助患者实现“缓解疼痛 - 康复 - 持续健康”的目标。",
+    aboutDetailBtn: "查看详细介绍",
+    history: "成立历史",
+    history1: "成立于2008年10月，由阮春山、阮文世、潘明德医生创办",
+    history2: "前身为阮文世医生于1999年创办的世家堂诊所",
+    history3: "旧址：河内慈廉美婷咸宜路A4栋；后迁至美婷1陈文来路CT1栋。",
+    history4: "2025年3月迁至河内慈廉亭村路182巷TW1药材公司集体区17号，第二分院位于河内芳烈路43号",
+    cert: "营业执照与专业资格证书",
+    facility: "设施环境",
+    servicesDesc: "山-世-德中医诊所是一家传统医学专科诊所，专注于通过结合现代方法的中医疗法治疗骨关节、神经及消化系统疾病。",
+    notFound: "文章不存在。",
+    backToList: "返回列表",
+    back: "返回",
+    relatedArticles: "相关文章",
+    noContent: "此类别下暂无内容。"
+  },
+  diseaseCategoriesData: [
+    {
+      title: "骨关节",
+      diseases: ["颈肩酸痛", "腰痛", "坐骨神经痛", "膝关节退化", "关节炎"],
+    },
+    {
+      title: "神经系统",
+      diseases: ["头痛", "失眠", "植物神经功能紊乱"],
+    },
+    {
+      title: "消化系统",
+      diseases: ["胃炎", "胃食管反流", "结肠炎", "痔疮", "肛瘘"],
+    },
+    {
+      title: "皮肤科",
+      diseases: ["过敏", "湿疹", "荨麻疹"],
+    },
+    {
+      title: "女性健康",
+      diseases: ["月经不调", "更年期"],
+    },
+    {
+      title: "季节性疾病",
+      diseases: ["甲流", "乙流", "新冠肺炎", "病毒性发热"],
+    }
+  ],
+  gallery: {
+    all: "全部",
+    image: "图片",
+    video: "视频",
+  },
+  contact: {
+    formTitle: "发送咨询请求",
+    nameLabel: "姓名 *",
+    namePlaceholder: "张三",
+    phoneLabel: "电话号码 *",
+    phonePlaceholder: "138-1234-5678",
+    emailLabel: "邮箱",
+    emailPlaceholder: "email@example.com",
+    messageLabel: "内容 *",
+    messagePlaceholder: "请描述您的症状或咨询要求...",
+    submitBtn: "提交请求",
+    successTitle: "感谢您的反馈！",
+    successDesc: "我们已收到您的信息。我们的咨询团队将尽快为您联系。",
+    addressLabel: "地址",
+    hotlineLabel: "热线",
+    emailDataLabel: "邮箱",
+    workingHoursLabel: "工作时间",
+  },
+  footer: {
+    contactData: "联系信息",
+    quickLinks: "快速链接",
+    workingHours: "工作时间",
+    allRightsReserved: "© 2026 山-世-德中医诊所。保留所有权利。"
+  }
+};

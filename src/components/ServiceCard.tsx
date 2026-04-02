@@ -7,8 +7,8 @@ interface ServiceCardProps {
   image: string;
 }
 
-const ServiceCard = ({ title, description, image }: ServiceCardProps) => (
-  <div className="card-clinic group">
+const ServiceCard = ({ id, title, description, image }: ServiceCardProps) => (
+  <Link to={`/dich-vu/${id}`} className="card-clinic group block cursor-pointer hover:shadow-lg transition-all duration-300">
     <div className="aspect-[4/3] overflow-hidden">
       <img
         src={image}
@@ -23,7 +23,7 @@ const ServiceCard = ({ title, description, image }: ServiceCardProps) => (
       </h3>
       <p className="text-sm text-muted-foreground line-clamp-3">{description}</p>
     </div>
-  </div>
+  </Link>
 );
 
 export default ServiceCard;

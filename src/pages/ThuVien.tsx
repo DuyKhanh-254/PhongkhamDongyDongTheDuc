@@ -2,8 +2,10 @@ import { useState } from "react";
 import PageBanner from "@/components/PageBanner";
 import { galleryImages } from "@/data/mockData";
 import { X, PlayCircle } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const ThuVien = () => {
+  const { t } = useLanguage();
   const [activeTab, setActiveTab] = useState<"all" | "image" | "video">("all");
   const [lightbox, setLightbox] = useState<string | null>(null);
 
@@ -20,9 +22,7 @@ const ThuVien = () => {
 
   return (
     <div>
-      <PageBanner 
-       
-      />
+      <PageBanner title={String(t('nav.library'))} />
 
       <section className="section-padding bg-zinc-50/60 pb-24">
         <div className="section-container">
@@ -30,9 +30,9 @@ const ThuVien = () => {
           {/* Tabs Filter */}
           <div className="flex flex-wrap items-center justify-center gap-3 mb-12">
             {[
-              { id: "all", label: "Tất cả" },
-              { id: "image", label: "Hình ảnh" },
-              { id: "video", label: "Video" },
+              { id: "all", label: t('gallery.all') },
+              { id: "image", label: t('gallery.image') },
+              { id: "video", label: t('gallery.video') },
             ].map((tab) => (
               <button
                 key={tab.id}
@@ -43,7 +43,7 @@ const ThuVien = () => {
                     : "bg-white text-foreground hover:bg-accent border border-border/40"
                 }`}
               >
-                {tab.label}
+                {String(tab.label)}
               </button>
             ))}
           </div>
@@ -80,7 +80,7 @@ const ThuVien = () => {
           
           {filteredItems.length === 0 && (
             <div className="text-center py-20 text-muted-foreground">
-              Không có nội dung nào trong danh mục này.
+              {String(t('sections.noContent'))}
             </div>
           )}
 

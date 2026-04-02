@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
+import FloatingContact from "@/components/FloatingContact";
 import Index from "./pages/Index";
 import GioiThieu from "./pages/GioiThieu";
 import DichVu from "./pages/DichVu";
@@ -17,31 +18,39 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
+import { LanguageProvider } from "@/contexts/LanguageContext";
+
+import ServiceDetail from "./pages/ServiceDetail";
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <HashRouter>
-        <ScrollToTop />
-        <div className="flex flex-col min-h-screen">
-          <Header />
-          <main className="flex-1">
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/gioi-thieu" element={<GioiThieu />} />
-              <Route path="/dich-vu" element={<DichVu />} />
-              <Route path="/tin-tuc-kien-thuc" element={<TinTuc />} />
-              <Route path="/tin-tuc-kien-thuc/:slug" element={<ArticleDetail />} />
-              <Route path="/thu-vien" element={<ThuVien />} />
-              <Route path="/lien-he" element={<LienHe />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </main>
-          <Footer />
-        </div>
-      </HashRouter>
-    </TooltipProvider>
+    <LanguageProvider>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <HashRouter>
+          <ScrollToTop />
+          <div className="flex flex-col min-h-screen">
+            <Header />
+            <main className="flex-1">
+              <Routes>
+                <Route path="/" element={<Index />} />
+                <Route path="/gioi-thieu" element={<GioiThieu />} />
+                <Route path="/dich-vu" element={<DichVu />} />
+                <Route path="/dich-vu/:id" element={<ServiceDetail />} />
+                <Route path="/tin-tuc-kien-thuc" element={<TinTuc />} />
+                <Route path="/tin-tuc-kien-thuc/:slug" element={<ArticleDetail />} />
+                <Route path="/thu-vien" element={<ThuVien />} />
+                <Route path="/lien-he" element={<LienHe />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </main>
+            <Footer />
+            <FloatingContact />
+          </div>
+        </HashRouter>
+      </TooltipProvider>
+    </LanguageProvider>
   </QueryClientProvider>
 );
 

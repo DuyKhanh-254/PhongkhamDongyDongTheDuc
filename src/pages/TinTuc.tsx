@@ -1,21 +1,27 @@
 import PageBanner from "@/components/PageBanner";
 import ArticleCard from "@/components/ArticleCard";
-import { articles } from "@/data/mockData";
+import { getMockData } from "@/data/mockData";
+import { useLanguage } from "@/contexts/LanguageContext";
 
-const TinTuc = () => (
-  <div>
-    <PageBanner title="Tin tức & Kiến thức" />
+const TinTuc = () => {
+  const { lang, t } = useLanguage();
+  const { articles } = getMockData(lang);
 
-    <section className="section-padding bg-card">
-      <div className="section-container">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {articles.map((a) => (
-            <ArticleCard key={a.id} {...a} />
-          ))}
+  return (
+    <div>
+      <PageBanner title={String(t('nav.news'))} />
+
+      <section className="section-padding bg-card">
+        <div className="section-container">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {articles.map((a) => (
+              <ArticleCard key={a.id} {...a} />
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
-  </div>
-);
+      </section>
+    </div>
+  );
+};
 
 export default TinTuc;

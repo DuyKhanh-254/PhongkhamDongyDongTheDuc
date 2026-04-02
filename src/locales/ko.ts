@@ -1,0 +1,106 @@
+export const ko = {
+  nav: {
+    home: "홈",
+    about: "소개",
+    services: "진료 및 치료 서비스",
+    news: "뉴스 및 지식",
+    library: "갤러리",
+    contact: "연락처",
+  },
+  header: {
+    lang_vi: "Tiếng Việt",
+    lang_ko: "한국어",
+    lang_zh: "中文",
+  },
+  hero: {
+    title: "동양의학 클리닉\n손 - 테 - 득",
+    desc: "목 어깨 통증? 불면증? 좌골신경통?\n동양의학을 통한 효과적인 치료",
+    bullets: ["서양 의학에 의존하지 않음", "개인 맞춤형 치료법"],
+    bookBtn: "상담 예약",
+    hotlineBtn: "핫라인",
+  },
+  sections: {
+    commonDiseases: "일반적인 치료 질환",
+    methods: "클리닉 치료 방법",
+    doctors: "의료진 소개",
+    testimonials: "환자 후기",
+    news: "뉴스 및 지식",
+    viewAllNews: "모든 기사 보기",
+    bookNow: "오늘 바로 진료 예약하세요",
+    bookNowDesc: "풍부한 경험을 가진 의료진이 상담 및 치료를 도와드립니다.",
+    callNow: "지금 전화하기:",
+    sendReq: "상담 요청 보내기",
+    aboutShort1: "손-테-득 동양의학 클리닉은 전통 의학 전문 클리닉으로, 현대적 방법을 결합한 동양의학을 통해 근골격계, 신경계 및 소화기계 질환을 집중적으로 치료합니다.",
+    aboutShort2: "본 클리닉은 침술, 지압, 전기침, 한약 처방 및 비약물 요법을 적용하여 질병의 근본 원인에 작용하고 기혈 순환을 돕고 신체 기능을 자연스럽게 회복시킵니다.",
+    aboutShort3: "손-테-득은 환자가 서양 의학에 의존하지 않고 안전한 동양의학적 방법으로 '통증 완화 - 회복 - 지속 가능한 건강'을 목표로 합니다.",
+    aboutDetailBtn: "상세 소개 보기",
+    history: "설립 역사",
+    history1: "2008년 10월 응우옌 쑤언 손, 응우옌 반 테, 판 민 득 의사가 설립",
+    history2: "전신은 1999년 응우옌 반 테 의사가 설립한 떼자즈엉 클리닉",
+    history3: "이전 주소: 하노이 투리엠 미딘 함응이 스트리트 A4 하우스; 이후 미딘 1 티란발라이 스트리트 CT1 하우스로 이전.",
+    history4: "2025년 3월 하노이 투리엠 미딘 딘똔 길 182번 골목 TW1 제약 회사 집합 주택 17번, 하노이 프엉 리엣 스트리트 43번 제2 시설로 이전",
+    cert: "운영 라이센스 및 전문 인증서",
+    facility: "시설 안내",
+    servicesDesc: "손-테-득 동양의학 클리닉은 전통 의학 전문 클리닉으로, 현대적 방법을 결합한 동양의학을 통해 근골격계, 신경계 및 소화기계 질환을 집중적으로 치료합니다.",
+    notFound: "기사가 존재하지 않습니다.",
+    backToList: "목록으로 돌아가기",
+    back: "뒤로 가기",
+    relatedArticles: "관련 기사",
+    noContent: "이 카테고리에 내용이 없습니다."
+  },
+  diseaseCategoriesData: [
+    {
+      title: "근골격계",
+      diseases: ["목/어깨 통증", "요통", "좌골신경통", "무릎 관절염", "관절염"],
+    },
+    {
+      title: "신경계",
+      diseases: ["두통", "불면증", "자율신경계 장애"],
+    },
+    {
+      title: "소화기계",
+      diseases: ["위염", "위식도 역류", "대장염", "치질", "항문 누공"],
+    },
+    {
+      title: "피부과",
+      diseases: ["알레르기", "습진", "두드러기"],
+    },
+    {
+      title: "여성 건강",
+      diseases: ["생리 불순", "갱년기"],
+    },
+    {
+      title: "계절성 질환",
+      diseases: ["독감 A", "독감 B", "COVID-19", "바이러스성 열"],
+    }
+  ],
+  gallery: {
+    all: "전체",
+    image: "이미지",
+    video: "비디오",
+  },
+  contact: {
+    formTitle: "상담 요청 보내기",
+    nameLabel: "성함 *",
+    namePlaceholder: "홍길동",
+    phoneLabel: "전화번호 *",
+    phonePlaceholder: "010-1234-5678",
+    emailLabel: "이메일",
+    emailPlaceholder: "email@example.com",
+    messageLabel: "내용 *",
+    messagePlaceholder: "증상이나 상담 요청 내용을 설명해 주세요...",
+    submitBtn: "요청 보내기",
+    successTitle: "감사합니다!",
+    successDesc: "정보를 성공적으로 수신했습니다. 상담 팀에서 빠른 시일 내에 연락드리겠습니다.",
+    addressLabel: "주소",
+    hotlineLabel: "핫라인",
+    emailDataLabel: "이메일",
+    workingHoursLabel: "근무 시간",
+  },
+  footer: {
+    contactData: "연락처 정보",
+    quickLinks: "빠른 링크",
+    workingHours: "근무 시간",
+    allRightsReserved: "© 2026 손-테-득 동양의학 클리닉. 모든 권리 보유."
+  }
+};

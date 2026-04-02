@@ -1,0 +1,106 @@
+export const vi = {
+  nav: {
+    home: "Trang chủ",
+    about: "Giới thiệu",
+    services: "DỊCH VỤ KHÁM & ĐIỀU TRỊ",
+    news: "Tin tức & Kiến thức",
+    library: "Thư viện",
+    contact: "Liên hệ",
+  },
+  header: {
+    lang_vi: "Tiếng Việt",
+    lang_ko: "한국어",
+    lang_zh: "中文",
+  },
+  hero: {
+    title: "PHÒNG KHÁM ĐÔNG Y\nSƠN - THẾ - ĐỨC",
+    desc: "Đau cổ vai gáy? Mất ngủ? Thần kinh tọa?\nĐiều trị hiệu quả bằng Đông y",
+    bullets: ["Không phụ thuộc thuốc Tây", "Phác đồ cá nhân hóa"],
+    bookBtn: "Đặt lịch tư vấn",
+    hotlineBtn: "Hotline",
+  },
+  sections: {
+    commonDiseases: "Các bệnh điều trị phổ biến",
+    methods: "Phương pháp điều trị tại phòng khám",
+    doctors: "Đội ngũ y bác sĩ",
+    testimonials: "Cảm nhận bệnh nhân",
+    news: "Tin tức & Kiến thức",
+    viewAllNews: "Xem tất cả bài viết",
+    bookNow: "Đặt lịch khám ngay hôm nay",
+    bookNowDesc: "Đội ngũ bác sĩ giàu kinh nghiệm sẵn sàng tư vấn và điều trị cho bạn.",
+    callNow: "Gọi ngay:",
+    sendReq: "Gửi yêu cầu tư vấn",
+    aboutShort1: "Phòng khám Đông y Sơn Thế Đức là phòng khám chuyên khoa y học cổ truyền, tập trung điều trị các bệnh lý xương khớp, thần kinh và tiêu hóa bằng phương pháp Đông y kết hợp hiện đại.",
+    aboutShort2: "Phòng khám áp dụng các phương pháp điều trị như châm cứu, xoa bóp bấm huyệt, điện châm, kê đơn thuốc Đông y và các liệu pháp không dùng thuốc, giúp tác động vào căn nguyên bệnh, lưu thông khí huyết và phục hồi chức năng cơ thể một cách tự nhiên.",
+    aboutShort3: "Sơn Thế Đức hướng tới mục tiêu giúp người bệnh giảm đau – phục hồi – sống khỏe bền vững bằng các phương pháp Đông y an toàn, không phụ thuộc thuốc Tây.",
+    aboutDetailBtn: "GIỚI THIỆU CHI TIẾT",
+    history: "Lịch sử thành lập",
+    history1: "Thành lập từ tháng 10/2008 do bs Nguyễn Xuân Sơn, Nguyễn Văn Thế, Phan Minh Đức",
+    history2: "Tiền thân là phòng khám Thể gia đường năm 1999 do bs Nguyễn Văn Thế",
+    history3: "Địa chỉ cũ: Nhà A4 đường Hàm Nghi, phường Mỹ Đình, Từ Liêm, Hà Nội; sau chuyển về nhà CT1 đường Trần Văn Lai phường Mỹ Đình 1.",
+    history4: "Tháng 3 năm 2025 chuyển về số 17, khu tập thể công ty dược liệu TW1, ngõ 182 đường Đình Thôn, phường Từ Liêm Hà Nội, cơ sở 2 tại số 43 đường Phương Liệt - Hà Nội",
+    cert: "Giấy phép hoạt động & chứng nhận chuyên môn",
+    facility: "Cơ sở vật chất",
+    servicesDesc: "Phòng khám Đông y Sơn - Thế - Đức cung cấp đa dạng dịch vụ y học cổ truyền, kết hợp phương pháp hiện đại nhằm mang lại hiệu quả điều trị tối ưu.",
+    notFound: "Bài viết không tồn tại.",
+    backToList: "Quay lại danh sách",
+    back: "Quay lại",
+    relatedArticles: "Bài viết liên quan",
+    noContent: "Không có nội dung nào trong danh mục này."
+  },
+  diseaseCategoriesData: [
+    {
+      title: "Xương khớp",
+      diseases: ["Đau cổ vai gáy", "Đau thắt lưng", "Thần kinh tọa", "Thoái hóa khớp gối", "Viêm khớp"],
+    },
+    {
+      title: "Thần kinh",
+      diseases: ["Đau đầu", "Mất ngủ", "Rối loạn thần kinh thực vật"],
+    },
+    {
+      title: "Tiêu hóa",
+      diseases: ["Viêm dạ dày", "Trào ngược dạ dày", "Viêm đại tràng", "Trĩ", "Rò hậu môn"],
+    },
+    {
+      title: "Da liễu",
+      diseases: ["Dị ứng", "Chàm", "Mề đay"],
+    },
+    {
+      title: "Sức khỏe phụ nữ",
+      diseases: ["Rối loạn kinh nguyệt", "Tiền mãn kinh"],
+    },
+    {
+      title: "Bệnh theo mùa",
+      diseases: ["Cúm A", "Cúm B", "COVID-19", "Sốt virus"],
+    }
+  ],
+  gallery: {
+    all: "Tất cả",
+    image: "Hình ảnh",
+    video: "Video",
+  },
+  contact: {
+    formTitle: "Gửi yêu cầu tư vấn",
+    nameLabel: "Họ và tên *",
+    namePlaceholder: "Nguyễn Văn A",
+    phoneLabel: "Số điện thoại *",
+    phonePlaceholder: "0912 345 678",
+    emailLabel: "Email",
+    emailPlaceholder: "email@example.com",
+    messageLabel: "Nội dung *",
+    messagePlaceholder: "Mô tả triệu chứng hoặc yêu cầu tư vấn...",
+    submitBtn: "Gửi yêu cầu",
+    successTitle: "Cảm ơn bạn!",
+    successDesc: "Chúng tôi đã nhận được thông tin. Đội ngũ tư vấn sẽ liên hệ bạn trong thời gian sớm nhất.",
+    addressLabel: "Địa chỉ",
+    hotlineLabel: "Hotline",
+    emailDataLabel: "Email",
+    workingHoursLabel: "Giờ làm việc",
+  },
+  footer: {
+    contactData: "Thông tin liên hệ",
+    quickLinks: "Liên kết nhanh",
+    workingHours: "Giờ làm việc",
+    allRightsReserved: "© 2026 Phòng khám Đông y Sơn - Thế - Đức. Bảo lưu mọi quyền."
+  }
+};
